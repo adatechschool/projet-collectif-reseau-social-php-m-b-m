@@ -36,24 +36,7 @@
             <main>
                 <!-- L'article qui suit est un exemple pour la présentation et 
                   @todo: doit etre retiré -->
-                <article>
-                    <h3>
-                        <time datetime='2020-02-01 11:12:13' >31 février 2010 à 11h12</time>
-                    </h3>
-                    <address>par AreTirer</address>
-                    <div>
-                        <p>Ceci est un paragraphe</p>
-                        <p>Ceci est un autre paragraphe</p>
-                        <p>... de toutes manières il faut supprimer cet 
-                            article et le remplacer par des informations en 
-                            provenance de la base de donnée (voir ci-dessous)</p>
-                    </div>                                            
-                    <footer>
-                        <small>♥1012 </small>
-                        <a href="">#lorem</a>,
-                        <a href="">#piscitur</a>,
-                    </footer>
-                </article>               
+                              
 
                 <?php include "refactoring.php";
                 /*
@@ -66,8 +49,15 @@
                  */
 
                 // Etape 1: Ouvrir une connexion avec la base de donnée.
-               
+ // 1. Se connecter à la base de données
+// $connexion = mysqli_connect("localhost", "utilisateur", "motdepasse", "nom_de_la_base");
+             
                 //verification
+
+
+
+
+
                 if ($mysqli->connect_errno)
                 {
                     echo "<article>";
@@ -123,13 +113,13 @@
                         <h3>
                             <time><?php echo $post['created'] ?></time>
                         </h3>
-                        <address>AREMPLACER</address>
+                        <address><?php echo $post ['author_name'] ?></address>
                         <div>
-                            <p>AREMPLACER</p>
+                            <p><?php echo $post['content'] ?></p>
                         </div>
                         <footer>
-                            <small>♥ AREMPLACER </small>
-                            <a href="">AREMPLACER</a>,
+                            <small>♥ <?php echo $post['like_number'] ?> </small>
+                            <a href=""><?php echo "#" $post['taglist'] ?></a>,
                         </footer>
                     </article>
                     <?php
