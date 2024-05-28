@@ -36,11 +36,11 @@
              */
             $tagId = intval($_GET['tag_id']);
             ?>
-            <?php
+            <?php include "refactoring.php";
             /**
              * Etape 2: se connecter à la base de donnée
              */
-            $mysqli = new mysqli("localhost", "root", "root", "socialnetwork");
+           
             ?>
 
             <aside>

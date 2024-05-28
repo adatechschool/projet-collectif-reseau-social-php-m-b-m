@@ -38,7 +38,7 @@
                 </section>
             </aside>
             <main>
-                <?php
+                <?php include "refactoring.php";
                 /**
                  * Etape 1: Les paramètres concernent une utilisatrice en particulier
                  * La première étape est donc de trouver quel est l'id de l'utilisatrice
@@ -51,8 +51,7 @@
                 /**
                  * Etape 2: se connecter à la base de donnée
                  */
-                $mysqli = new mysqli("localhost", "root", "root", "socialnetwork");
-
+                
                 /**
                  * Etape 3: récupérer le nom de l'utilisateur
                  */

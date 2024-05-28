@@ -55,7 +55,7 @@
                     </footer>
                 </article>               
 
-                <?php
+                <?php include "refactoring.php";
                 /*
                   // C'est ici que le travail PHP commence
                   // Votre mission si vous l'acceptez est de chercher dans la base
@@ -66,7 +66,7 @@
                  */
 
                 // Etape 1: Ouvrir une connexion avec la base de donnée.
-                $mysqli = new mysqli("localhost", "root", "root", "socialnetwork");
+               
                 //verification
                 if ($mysqli->connect_errno)
                 {
