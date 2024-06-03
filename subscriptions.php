@@ -31,8 +31,7 @@
                 <section>
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez la liste des personnes dont
-                        l'utilisatrice
-                        n° <?php echo intval($_GET['user_id']) ?>
+                        l'utilisatrice <!-- <?php echo $["ZOULFAT"];?> -->
                         suit les messages
                     </p>
 
@@ -55,12 +54,22 @@
                 $lesInformations = $mysqli->query($laQuestionEnSql);
                 // Etape 4: à vous de jouer
                 //@todo: faire la boucle while de parcours des abonnés et mettre les bonnes valeurs ci dessous 
-                ?>
-                <article>
-                    <img src="user.jpg" alt="blason"/>
-                    <h3>Alexandra</h3>
-                    <p>id:654</p>                    
+                
+                while ($post = $lesInformations->fetch_assoc())
+                {
+
+              /*       echo "<pre>" . print_r($post, 1) . "</pre>";  */
+                    ?>  
+                                  
+                    <article>
+                    
+                        <img src="user.jpg" alt="blason"/>
+                       <h3> <?php echo $post["alias"];?>  </h3>
+                       <h3> <?php echo $post["email"];?>  </h3>
                 </article>
+                <?php } ?>
+                
+
             </main>
         </div>
     </body>
