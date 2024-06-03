@@ -31,8 +31,7 @@
                 <section>
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez la liste des personnes dont
-                        l'utilisatrice
-                        n° <?php echo intval($_GET['user_id']) ?>
+                        l'utilisatrice <!-- <?php echo $["ZOULFAT"];?> -->
                         suit les messages
                     </p>
 
