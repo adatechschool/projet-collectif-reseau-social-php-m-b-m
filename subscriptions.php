@@ -31,7 +31,7 @@
                 <section>
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez la liste des personnes dont
-                        l'utilisatrice <!-- <?php echo $["ZOULFAT"];?> -->
+                        l'utilisatrice n°<?php echo intval($_GET['user_id'])?>
                         suit les messages
                     </p>
 
@@ -60,7 +60,7 @@
                 <article>
                     <img src="user.jpg" alt="blason"/>
                     <h3><?php echo $post["alias"] ?></h3>
-                    <p><?php echo $post["id"] ?></p>                    
+                    <p><?php echo $post["id"] ?></p>             
                 </article>
                 <?php } ?>
 
