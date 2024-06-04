@@ -113,7 +113,11 @@
                         <h3>
                             <time><?php echo $post['created'] ?></time>
                         </h3>
-                        <address><?php echo $post ['author_name'] ?></address>
+                            <address>
+                                 <a href="wall.php?user_id<?php echo $post['user_id']; ?>">
+                                    <?php echo $post['author_name']; ?>
+                </a>
+                             </address>
                         <div>
                             <p><?php echo $post['content'] ?></p>
                         </div>
