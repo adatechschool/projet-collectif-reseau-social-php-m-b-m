@@ -27,7 +27,7 @@
         </header>
         <div id="wrapper">
             <aside>
-                <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
+                <img src="raoult.jpg" alt="Portrait de l'utilisatrice"/>
                 <section>
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez la liste des personnes dont
@@ -58,7 +58,7 @@
                 {
                 ?>
                 <article>
-                    <img src="user.jpg" alt="blason"/>
+                    <img src="raoult.jpg" alt="blason"/>
                     <h3><?php echo $post["alias"] ?></h3>
                     <p><?php echo $post["id"] ?></p>             
                 </article>
