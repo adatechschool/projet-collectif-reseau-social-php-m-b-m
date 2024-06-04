@@ -108,8 +108,10 @@
                     <h3>
                         <time datetime='2020-02-01 11:12:13' >1er février 2010 à 11h12</time>
                         
+                        <!-- <a href="wall.php?user_id=<?php echo $tag["id"]?>">Mur</a> -->
+
                     </h3>
-                    <address> par <?php echo $user["author_name"]?></address>
+                    <address><a href="wall.php?user_id=<?php echo $tag["id"]?>"> par <?php echo $user["author_name"]?></a></address>
                     <div>
                         <!-- <p>Ceci est un paragraphe</p>
                         <p>Ceci est un autre paragraphe</p> -->

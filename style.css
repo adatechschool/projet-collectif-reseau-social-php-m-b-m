@@ -7,15 +7,18 @@ a {
   text-decoration: none;
   color: rgb(235, 129, 201);
 }
+
 body > header img {
   height: 5em;
 }
+
 body > header #menu {
   display: flex;
   width: 50%;
   align-items: stretch;
   border-left: 1px solid #99b;
 }
+
 body > header #menu a {
   flex: 1;
   text-align: center;
@@ -83,21 +86,25 @@ body > header #user:hover ul {
   height: 80vh;
   overflow-y: scroll;
 }
+
 #wrapper main article {
   background-color: #fff;
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 1em;
 }
+
 #wrapper main article h3 {
   margin: 0;
   padding: 0;
   font-weight: normal;
   font-size: 1em;
 }
+
 #wrapper main article time {
   float: left;
 }
+
 #wrapper main article address {
   text-align: right;
   margin-bottom: 1em;
@@ -116,33 +123,40 @@ body > header #user:hover ul {
 #wrapper.admin {
   flex-direction: row-reverse;
 }
+
 #wrapper.admin aside {
   flex: 1;
   margin-left: 1em;
   border-radius: 0;
   padding: 0;
 }
+
 #wrapper.admin main {
   flex: 2;
   background-color: #fff;
   border-radius: 0;
   padding: 0;
 }
+
 #wrapper.admin h2 {
   text-align: center;
 }
+
 #wrapper.admin h3 {
   margin: 0;
 }
+
 #wrapper.admin nav {
   text-align: right;
 }
+
 #wrapper.admin article {
   border: 1px solid #ddd;
   border-radius: 1em;
   padding: 1em;
   margin: 1em;
 }
+
 #wrapper.admin article p {
   float: left;
   margin: 0;
@@ -164,11 +178,13 @@ body > header #user:hover ul {
   align-items: flex-start;
   align-content: flex-start;
 }
+
 .contacts article {
   width: 25em;
   height: 7em;
   margin-right: 1em;
 }
+
 .contacts article img {
   float: right;
   height: 5em;
@@ -183,11 +199,13 @@ form dl dt {
   font-weight: bold;
   line-height: 1.5em;
 }
+
 form dl dd {
   margin-left: 10em;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
+
 form dl dd textarea {
   width: 40em;
   height: 15em;
