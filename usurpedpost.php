@@ -43,8 +43,7 @@ session_start();
                     /**
                      * BD
                      */
-                    $mysqli = new mysqli("localhost", "root", "root", "socialnetwork_tests");
-                    /**
+                    include "refactoring.php"    ;                /**
                      * Récupération de la liste des auteurs
                      */
                     $listAuteurs = [];
@@ -69,8 +68,8 @@ session_start();
                         // observez le résultat de cette ligne de débug (vous l'effacerez ensuite)
                         echo "<pre>" . print_r($_POST, 1) . "</pre>";
                         // et complétez le code ci dessous en remplaçant les ???
-                        $authorId = $_POST['???'];
-                        $postContent = $_POST['???'];
+                        $authorId = $_POST['auteur'];
+                        $postContent = $_POST['message'];
 
 
                         //Etape 3 : Petite sécurité
@@ -100,7 +99,7 @@ session_start();
                     }
                     ?>                     
                     <form action="usurpedpost.php" method="post">
-                        <input type='hidden' name='???' value='achanger'>
+                        <input type='hidden' name='???' value=''>
                         <dl>
                             <dt><label for='auteur'>Auteur</label></dt>
                             <dd><select name='auteur'>
